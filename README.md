@@ -29,19 +29,19 @@ Modify tsconfig.json
 }
 ```
 
-4. Make src/ and index.ts
+4. Make src/ and app.ts
 
 ```bash
 mkdir src
-touch src/index.ts
+touch src/app.ts
 ```
 
 5. package.json scripts
 
 ```json
-  "dev": "nodemon --watch src --exec ts-node src/index.ts",
+  "dev": "nodemon --watch src --exec ts-node src/app.ts",
   "build": "tsc",
-  "start": "node dist/index.js"
+  "start": "node dist/app.js"
 ```
 
 6. Run
